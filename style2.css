@@ -1,0 +1,275 @@
+@media screen and(max-width: 400px){
+    body{
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        overflow-x: hidden;
+        float: calc(
+        );
+    }
+    /*barre de navigation*/
+     nav{
+        background: rgb(27, 95, 197);
+        color: white;
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        z-index: 3;
+        font-family: "Quicksand",sans-serif; 
+    }
+    nav ul{
+        display: none  
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    nav h1{
+        margin-left: 10%;
+        margin-top: 10px;
+        font-size: 30px;
+    } 
+    nav li a:hover{
+        background-color: white;
+        color: rgb(27, 95, 197);
+    }
+    /*premiÃ©re page*/
+    .page1{
+     
+        width: 200%;
+        height: 1000px;
+        position: relative;
+        z-index: 2;
+        background: url(images/blue.png);
+        display: flex;
+        background-size: 500px 900px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .page1::after{
+        content: '';
+        inset: 0;
+        position: absolute;
+        background: linear-gradient(90deg, rgb(2, 0, 1) 0%, rgb(9, 9, 121) 35%, rgba(0, 213, 255, 0.582) 100%);
+        z-index: -1;
+    
+    }
+    .texte{
+        height: 10%;
+        width: 50%;
+        color: aliceblue;
+        position: relative;
+        margin-left: 10%;
+        margin-top: 40%;
+        font-family: "Quicksand",sans-serif;
+    } 
+    .texte1{
+        font-size: 35px;
+    }
+    .texte2{
+        font-size: 70px;
+        color: transparent;
+        -webkit-text-stroke: 2px rgba(255, 255, 255, 0.521);
+    
+    }
+    .texte3{
+        font-size: 20px;
+    }
+    .texte4 a{
+        text-decoration: none;
+        color: rgb(27, 95, 197);
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        padding: 30px;
+    }
+    .texte4 a:hover{
+        background-color: burlywood;
+    }
+     
+    /*fin premiÃ©re page*/
+    /*deuxiÃ©me page*/
+    .page2{
+        display: flex;
+        flex-direction:column;
+        font-family: "Quicksand",sans-serif;
+        width: 100%;
+        height: 1100px; 
+    }
+    .image{
+        width: 500px;
+        height: 50%;
+        border-radius: 50%;
+        border: 10px solid rgba(33, 7, 177, 0.8);
+        margin-top: 10px;
+        margin-left:30px;
+        background-image: url(images/pexels-mikhail-nilov-8937868-removebg-preview.png);
+        background-repeat: no-repeat;
+    }
+    .apropos{
+        margin-top: 10px;
+        font-size: 20px;
+        word-spacing: 10px;
+        margin-left:50%;
+    }
+    .tex{
+        font-size:30px
+    }
+    .one{
+        background-color: rgb(126, 54, 194);
+        color: white;
+        border-radius: 100px;
+    }
+    .two{
+        background-color: rgb(27, 95, 197);
+        border-radius: 1000px;
+        height: 50px;
+        margin-right: 20px;
+        margin-top: 50px;
+       
+    }
+    .two a{
+        text-decoration: none;
+        color: white;
+    }
+    /*troisiÃ©me page*/
+    .page3{
+        width: 100%;
+        height: 1200px;
+    }
+    .capture{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around
+    }
+    .cap1{
+        width: 400px;
+        height: 300px;
+        border: 2px solid brown;
+        margin-left:30%
+    }
+    .cap1 a{
+        margin-left: 150px;
+        border: 2px solid brown;
+        text-decoration: none;
+        color  :red;
+        background-color: rgb(2, 0, 1);
+        padding: 10px;
+    }
+    .cap1 p{
+        font-size: 20px;
+        font-family:"Quicksand",sans-serif;
+        text-align: justify;
+        margin: 20px 20px;
+    }
+    .capt1{
+        width: 200px;
+        height: 100px;
+        border: 1px solid brown;
+        background-image: url(images/eÌcran.png);
+        background-repeat: no-repeat;
+        background-size: 100px 100px;
+        background-position: center;
+        margin-top: 10px;
+        margin-left: 90px;
+    }
+    .capt2{
+        width: 200px;
+        height: 100px;
+        border: 1px solid brown;
+        background-image: url(images/Capture.png);
+        background-repeat: no-repeat;
+        background-size: 180px 100px;
+        background-position: center;
+        margin-top: 10px;
+        margin-left: 90px;
+    }
+    .capt3{
+        width: 200px;
+        height: 100px;
+        border: 1px solid brown;
+        background-image: url(images/2022.png);
+        background-repeat: no-repeat;
+        background-size: 180px 100px;
+        background-position: center;
+        margin-top: 10px;
+        margin-left: 90px;
+        
+    }
+    h3 {
+    margin-left: 50%;
+    font-size: 2rem;
+    color: crimson;
+    font-weight: bold;
+    }
+    .pagee3{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        width: 200%;
+        height: 500px;
+    }
+    .text{
+        margin-top: 100px;
+        margin-bottom: 20px;
+        margin-left:20%;
+        font-size: 20px;
+        font-family:"Quicksand",sans-serif ;
+    }
+    .text strong{
+        font-size: 20px;
+    }
+    .progres{
+        text-align: left;
+        margin-top:  0px;
+        margin-bottom: 200px;
+        margin-left:20%;
+    }
+    #file{
+        width: 80%;
+    }
+    /*quatriÃ©me page*/
+    .footer{
+        background-color: rgb(27, 95, 197);
+        display: flex;
+        justify-content: center;
+        font-family: "Quicksand",sans-serif;
+        color: white;
+        width: 200%;
+    }
+    .footer P{
+        font-size: 20px;
+    }
+    .footer strong{
+        font-size: 30px;
+    }
+    .logo{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .servic{
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+    .contac{
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+    i{
+        margin-right: 10px;
+    }
+    i a{
+    text-decoration: none;
+    color: white;
+    font-family: "Quicksand",sans-serif;
+    }
+    i a:hover{
+        background-color: crimson;
+    }
+    .suplement{
+        margin-left: 35%;
+    }
+ }
