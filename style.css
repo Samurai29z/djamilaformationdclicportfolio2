@@ -1,3 +1,8 @@
+@media (max-width: 576px) { 
+    body{
+        max-width: 6oopx;
+    }
+ }
 @font-face{
     font-family: 'Quicksand';
     src: url(quicksand/Quicksand-Regular.ttf);
@@ -10,89 +15,45 @@
 body{
     margin: 0;
     padding: 0;
-    width: 100%;
     position: absolute;
-    overflow-x: hidden;
-    float: calc(
-    );
 }
-/*barre de navigation*/
- nav{
-    background: rgb(27, 95, 197);
-    color: white;
+.navbar{
+    background-color: rgb(27, 95, 197);
     position: fixed;
-    width: 100%;
-    height: 100px;
-    z-index: 3;
-    font-family: "Quicksand",sans-serif; 
+    z-index: 5;
 }
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 30px;
-    list-style-type: none;  
-}
-nav ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-}
-nav h1{
-    margin-left: 10%;
-    margin-top: 10px;
-    font-size: 30px;
-} 
-nav li a:hover{
-    background-color: white;
-    color: rgb(27, 95, 197);
-}
-.hamburger{
-    display: none;
-}
-/*premiére page*/
+
 .page1{
- 
-    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows:  100px 100px 1fr 100px;
+    background: linear-gradient(90deg, rgb(2, 0, 1) 0%, rgb(9, 9, 121) 35%, rgba(0, 213, 255, 0.582) 100%);
     height: 1300px;
     position: relative;
-    z-index: 2;
-    background: url(images/blue.png);
-    display: flex;
-    background-size: 1050px 1000px;
-    background-position: right;
-    background-repeat: no-repeat;
-}
-
-.page1::after{
-    content: '';
-    inset: 0;
-    position: absolute;
-    background: linear-gradient(90deg, rgb(2, 0, 1) 0%, rgb(9, 9, 121) 35%, rgba(0, 213, 255, 0.582) 100%);
-    z-index: -1;
-
+    z-index: 3;
 }
 .texte{
-    height: 10%;
-    width: 50%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
     color: aliceblue;
     position: relative;
-    margin-left: 30%;
-    margin-top: 20%;
+    z-index: 3;
+    margin-left:10%;
     font-family: "Quicksand",sans-serif;
 } 
 .texte1{
-    font-size: 35px;
+    font-size: 25px;
 }
 .texte2{
-    font-size: 70px;
+    font-size: 50px;
     color: transparent;
     -webkit-text-stroke: 2px rgba(255, 255, 255, 0.521);
 
 }
 .texte3{
-    font-size: 20px;
+    font-size: 15px;
 }
 .texte4 a{
     text-decoration: none;
@@ -179,27 +140,15 @@ nav li a:hover{
 .page2{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     font-family: "Quicksand",sans-serif;
-    width: 100%;
-    height: 1000px; 
 }
-.image{
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    border: 10px solid rgba(33, 7, 177, 0.8);
-    margin-top: 280px;
-    background-image: url(images/pexels-mikhail-nilov-8937868-removebg-preview.png);
-    background-repeat: no-repeat;
-}
+
 .apropos{
-    margin-top: 300px;
-    font-size: 20px;
+    margin-top: 100px;
     word-spacing: 10px;
 }
 .tex{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .one{
     background-color: rgb(126, 54, 194);
@@ -211,7 +160,6 @@ nav li a:hover{
     border-radius: 1000px;
     height: 50px;
     margin-right: 20px;
-    margin-top: 50px;
    
 }
 .two a{
@@ -220,8 +168,7 @@ nav li a:hover{
 }
 /*troisiéme page*/
 .page3{
-    width: 100%;
-    height: 1000px;
+
 }
 .capture{
     display: flex;
@@ -234,7 +181,7 @@ nav li a:hover{
     border: 2px solid brown;
 }
 .cap1 a{
-    margin-left: 100px;
+    margin-left: 50px;
     border: 2px solid brown;
     text-decoration: none;
     color  :red;
@@ -242,64 +189,55 @@ nav li a:hover{
     padding: 10px;
 }
 .cap1 p{
-    font-size: 20px;
     font-family:"Quicksand",sans-serif;
     text-align: justify;
     margin: 20px 20px;
 }
 .capt1{
-    width: 200px;
     height: 100px;
-    border: 1px solid brown;
     background-image: url(images/écran.png);
     background-repeat: no-repeat;
     background-size: 200px 150px;
     background-position: center;
     margin-top: 100px;
-    margin-left: 50px;
 }
 .capt2{
-    width: 200px;
     height: 100px;
-    border: 1px solid brown;
     background-image: url(images/Capture.png);
     background-repeat: no-repeat;
     background-size: 200px 150px;
     background-position: center;
     margin-top: 100px;
-    margin-left: 50px;
 }
 .capt3{
-    width: 200px;
     height: 100px;
-    border: 1px solid brown;
     background-image: url(images/2022.png);
     background-repeat: no-repeat;
     background-size: 200px 150px;
     background-position: center;
     margin-top: 100px;
-    margin-left: 50px;
     
 }
-h3 {
-margin-left: 40%;
-font-size: 5rem;
-margin-top: 100px;
-color: crimson;
-font-weight: bold;
+.titre {
+text-align: center;
+color: brown;
+margin-bottom: 50px;
+font-size: 3rem;
+}
+.title{
+    text-align: center;
+    color: brown;
+    margin-top: 100px;
+    font-size: 3rem;
 }
 .pagee3{
     display: flex;
     justify-content: space-around;
-    width: 100%;
-    height: 500px;
+    margin-top: 70px;
 }
 .text{
-    width: 30%;
     text-align: center;
-    margin-top: 0px;
     margin-bottom: 200px;
-    font-size: 20px;
     font-family:"Quicksand",sans-serif ;
 }
 .text strong{
@@ -309,7 +247,6 @@ font-weight: bold;
 .progres{
     width: 50%;
     text-align: center;
-    margin-top:  0px;
     margin-bottom: 200px;
 }
 #file{
@@ -319,10 +256,10 @@ font-weight: bold;
 .footer{
     background-color: rgb(27, 95, 197);
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     font-family: "Quicksand",sans-serif;
     color: white;
-    width: 100%;
 }
 .footer P{
     font-size: 20px;
